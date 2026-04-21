@@ -45,6 +45,7 @@ class GameplayScene(Scene):
         self._input: InputHandler | None = None
 
         self._note_cursor: int = 0
+        self._chart_end_time: float = 0.0
         self._active_holds: dict[int, NoteTarget] = {}
         self._last_grade: str = ""
         self._grade_timer: float = 0
@@ -64,9 +65,17 @@ class GameplayScene(Scene):
         self._player = Player(assist_mode=self._assist_mode)
         self._input = InputHandler()
         self._note_cursor = 0
+        self._chart_end_time = 0.0
         self._active_holds.clear()
         self._last_grade = ""
         self._grade_timer = 0
+
+        if song.notes:
+            last_row = max(
+                n.hold_end_row if n.note_type == HOLD_HEAD else n.row_index
+                for n in song.notes
+            )
+            self._chart_end_time = self._conductor.target_hit_time(last_row)
 
         Node.init_assets(self._lane_xs, LANE_WIDTH - 4, 20)
 
@@ -163,9 +172,14 @@ class GameplayScene(Scene):
             logger.info("Player failed – health depleted")
             return "results"
 
-        # --- Song finished ---
-        if not pygame.mixer.music.get_busy() and cond.song_started:
-            logger.info("Song finished")
+        # --- Chart finished ---
+        if (
+            self._note_cursor >= len(notes)
+            and not self._pool.active_nodes
+            and not self._active_holds
+            and cond.song_position >= self._chart_end_time + MISS_WINDOW_MS
+        ):
+            logger.info("Chart finished")
             return "results"
 
         return None

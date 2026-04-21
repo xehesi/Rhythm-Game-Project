@@ -17,6 +17,8 @@ class Conductor:
         self.song_position: float = 0.0
         self.song_started = False
         self.speed_multiplier: float = 1.0
+        self._last_update_tick: int = 0
+        self._audio_has_finished: bool = False
 
         # Assist-mode recovery
         self._recovering = False
@@ -33,10 +35,23 @@ class Conductor:
     def update(self):
         if not self.song_started:
             return
+        now_tick = pygame.time.get_ticks()
+        if self._last_update_tick == 0:
+            self._last_update_tick = now_tick
+        delta_ms = max(0, now_tick - self._last_update_tick)
+        self._last_update_tick = now_tick
+
         raw_pos = pygame.mixer.music.get_pos()  # ms since play() was called
         if raw_pos == -1:
-            return
-        self.song_position = raw_pos - self.offset
+            # Keep chart time moving after audio finishes so late-chart notes
+            # can still be reached and judged.
+            self.song_position += delta_ms
+            if not self._audio_has_finished:
+                self._audio_has_finished = True
+                logger.info("Audio playback ended; continuing chart timing")
+        else:
+            self.song_position = raw_pos - self.offset
+            self._audio_has_finished = False
 
         # Recovery interpolation toward 1.0x speed
         if self._recovering:
@@ -63,11 +78,16 @@ class Conductor:
         pygame.mixer.music.load(audio_path)
         pygame.mixer.music.play()
         self.song_started = True
+        self.song_position = 0.0
+        self._last_update_tick = pygame.time.get_ticks()
+        self._audio_has_finished = False
         logger.info("Playback started: %s", audio_path)
 
     def stop_song(self):
         pygame.mixer.music.stop()
         self.song_started = False
+        self._last_update_tick = 0
+        self._audio_has_finished = False
         logger.info("Playback stopped")
 
     # ------------------------------------------------------------------
