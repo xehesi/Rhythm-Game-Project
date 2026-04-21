@@ -46,6 +46,7 @@ def main():
         font=font,
         small_font=small_font,
         assist_mode=ASSIST_MODE,
+        get_easy_mode_fn=lambda: menu.easy_mode,
     )
 
     results = ResultsScene(

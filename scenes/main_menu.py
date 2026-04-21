@@ -16,11 +16,17 @@ class MainMenuScene(Scene):
         self._font = font
         self._small_font = small_font
         self._selected = 0
+        self._easy_mode = False
         self._options = [
             ("Play Demo Chart", "gameplay"),
             ("Import Audio", "import_audio"),
             ("Calibration", "calibration"),
+            ("Easy Mode", None),
         ]
+
+    @property
+    def easy_mode(self) -> bool:
+        return self._easy_mode
 
     def on_enter(self):
         self._selected = 0
@@ -34,7 +40,15 @@ class MainMenuScene(Scene):
                 elif e.key == pygame.K_DOWN:
                     self._selected = (self._selected + 1) % len(self._options)
                 elif e.key == pygame.K_RETURN:
-                    return self._options[self._selected][1]
+                    label, target = self._options[self._selected]
+                    if label == "Easy Mode":
+                        self._easy_mode = not self._easy_mode
+                        logger.info(
+                            "Easy Mode toggled %s",
+                            "ON" if self._easy_mode else "OFF",
+                        )
+                    else:
+                        return target
         return None
 
     def update(self) -> Optional[str]:
@@ -46,9 +60,12 @@ class MainMenuScene(Scene):
         surface.blit(title, (SCREEN_W // 2 - title.get_width() // 2, 140))
 
         for i, (label, _) in enumerate(self._options):
+            display_label = label
+            if label == "Easy Mode":
+                display_label = f"Easy Mode: {'On' if self._easy_mode else 'Off'}"
             color = (255, 215, 0) if i == self._selected else (180, 180, 180)
             prefix = "> " if i == self._selected else "  "
-            txt = self._small_font.render(prefix + label, True, color)
+            txt = self._small_font.render(prefix + display_label, True, color)
             surface.blit(txt, (SCREEN_W // 2 - txt.get_width() // 2, 260 + i * 45))
 
         hint = self._small_font.render(

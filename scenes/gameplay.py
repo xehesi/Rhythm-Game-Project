@@ -6,6 +6,7 @@ from typing import Optional
 import pygame
 
 from scenes.scene_manager import Scene
+from core.audio_utils import get_slowed_wav_path
 from core.conductor import Conductor
 from data.chart_parser import ChartParser, Song, NoteTarget, TAP, HOLD_HEAD
 from gameplay.nodes import Node, NodePool
@@ -27,15 +28,18 @@ STRIKE_LINE_Y = SCREEN_H - 100
 SCROLL_SPEED = 0.45  # pixels per millisecond
 VISIBLE_MS = SCREEN_H / SCROLL_SPEED  # how far ahead (in ms) we show notes
 MISS_WINDOW_MS = 150  # notes past this offset below strike line are missed
+EASY_MODE_SPEED = 0.8
 
 
 class GameplayScene(Scene):
     def __init__(self, chart_path: str, font: pygame.font.Font,
-                 small_font: pygame.font.Font, assist_mode: bool = False):
+                 small_font: pygame.font.Font, assist_mode: bool = False,
+                 get_easy_mode_fn=None):
         self._chart_path = chart_path
         self._font = font
         self._small_font = small_font
         self._assist_mode = assist_mode
+        self._get_easy_mode = get_easy_mode_fn or (lambda: False)
 
         # Initialised in on_enter so we get a fresh state each play
         self._conductor: Conductor | None = None
@@ -59,7 +63,8 @@ class GameplayScene(Scene):
     def on_enter(self):
         song = ChartParser.load(self._chart_path)
         self._song = song
-        self._conductor = Conductor(bpm=song.bpm,
+        playback_speed = EASY_MODE_SPEED if self._get_easy_mode() else 1.0
+        self._conductor = Conductor(bpm=song.bpm * playback_speed,
                                     rows_per_beat=song.rows_per_beat)
         self._pool = NodePool()
         self._player = Player(assist_mode=self._assist_mode)
@@ -82,8 +87,14 @@ class GameplayScene(Scene):
         audio = song.audio_path
         if not os.path.isabs(audio):
             audio = os.path.join(os.path.dirname(self._chart_path), audio)
+        if playback_speed != 1.0:
+            audio = get_slowed_wav_path(audio, playback_speed)
         self._conductor.start_song(audio)
-        logger.info("Gameplay started – chart '%s'", song.name)
+        logger.info(
+            "Gameplay started – chart '%s' at %.2fx",
+            song.name,
+            playback_speed,
+        )
 
     def on_exit(self):
         if self._conductor:
