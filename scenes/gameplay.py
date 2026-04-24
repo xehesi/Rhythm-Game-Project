@@ -151,6 +151,13 @@ class GameplayScene(Scene):
         for lane in self._input.lane_releases:
             if lane in self._active_holds:
                 hold = self._active_holds.pop(lane)
+                tail_t = cond.target_hit_time(hold.hold_end_row)
+                if cond.song_position < tail_t - Player.OK_WINDOW:
+                    self._player.register_hold_drop()
+                    self._last_grade = "MISS"
+                    self._grade_timer = cond.song_position + 400
+                    if self._assist_mode:
+                        cond.trigger_slowdown()
                 self._release_node_for(hold)
 
         # --- Auto-release holds whose tail time has passed ---

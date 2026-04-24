@@ -9,9 +9,9 @@ class Player:
     MULTIPLIER_THRESHOLDS = [10, 30, 60]  # streak counts that raise multiplier
 
     # Timing windows (ms)
-    PERFECT_WINDOW = 20
-    GOOD_WINDOW = 50
-    OK_WINDOW = 100
+    PERFECT_WINDOW = 50
+    GOOD_WINDOW = 100
+    OK_WINDOW = 150
 
     # Base points per grade
     POINTS = {"perfect": 300, "good": 200, "ok": 100, "miss": 0}
@@ -62,12 +62,19 @@ class Player:
 
     def register_miss(self):
         """Called when a note passes the miss window without any input."""
+        self._apply_miss_penalty("AUTO-MISS")
+
+    def register_hold_drop(self):
+        """Called when a hold is released before its tail window."""
+        self._apply_miss_penalty("HOLD-DROP")
+
+    def _apply_miss_penalty(self, reason: str):
         self.misses += 1
         self.streak = 0
         self.multiplier = 1
         if not self.assist_mode:
             self.health = max(0, self.health - self.HEALTH_PENALTY)
-        logger.debug("AUTO-MISS  health=%.0f", self.health)
+        logger.debug("%s  health=%.0f", reason, self.health)
 
     @property
     def is_dead(self) -> bool:
