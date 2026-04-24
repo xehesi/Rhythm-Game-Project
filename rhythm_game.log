@@ -1,73 +1,198 @@
-14:37:37 [RhythmGame.Scenes] INFO    Main Menu entered
-14:37:37 [RhythmGame.Scene] INFO    Entered scene 'menu'
-14:37:37 [RhythmGame.Main] INFO    Game initialised – starting main loop
-14:37:42 [RhythmGame.Scene] INFO    Exited scene 'menu'
-14:37:42 [RhythmGame.Chart] INFO    Loaded chart 'Demo Beat' – BPM=80.0  rows=197  active notes=42
-14:37:42 [RhythmGame.Conductor] INFO    Initialized: BPM=80.0  ms/beat=750.00  ms/row=187.50  offset=0.0
-14:37:42 [RhythmGame.Node] INFO    NodePool created  size=128
-14:37:42 [RhythmGame.Node] INFO    Assets initialised  note_w=76  note_h=20
-14:37:42 [RhythmGame.Conductor] INFO    Playback started: c:\Users\Toriz\Documents\Prog Meth\Rhythm-Game-Project\charts\demo.wav
-14:37:42 [RhythmGame.Scenes] INFO    Gameplay started – chart 'Demo Beat' at 1.00x
-14:37:42 [RhythmGame.Scene] INFO    Entered scene 'gameplay'
-14:37:43 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=901.0 ms
-14:37:43 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-14.5ms  streak=1  mult=1  score=300
-14:37:43 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-14.5ms  grade=perfect  target_row=5
-14:37:43 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=1158.0 ms
-14:37:44 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=1680.0 ms
-14:37:44 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=1.5ms  streak=2  mult=1  score=600
-14:37:44 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=1.5ms  grade=perfect  target_row=9
-14:37:44 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=2072.0 ms
-14:37:45 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=2474.0 ms
-14:37:45 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=55.5ms  streak=3  mult=1  score=700
-14:37:45 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=55.5ms  grade=ok  target_row=13
-14:37:45 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=2730.0 ms
-14:37:46 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=3212.0 ms
-14:37:46 [RhythmGame.Player] DEBUG   HIT  grade=good  err=44.5ms  streak=4  mult=1  score=900
-14:37:46 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=44.5ms  grade=good  target_row=17
-14:37:46 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=3385.0 ms
-14:37:46 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=3950.0 ms
-14:37:46 [RhythmGame.Player] DEBUG   HIT  grade=good  err=34.5ms  streak=5  mult=1  score=1100
-14:37:46 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=34.5ms  grade=good  target_row=21
-14:37:46 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=4122.0 ms
-14:37:47 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=4707.0 ms
-14:37:47 [RhythmGame.Player] DEBUG   HIT  grade=good  err=28.5ms  streak=6  mult=1  score=1300
-14:37:47 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=28.5ms  grade=good  target_row=25
-14:37:47 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=4870.0 ms
-14:37:48 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=5357.0 ms
-14:37:48 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-69.5ms  streak=7  mult=1  score=1400
-14:37:48 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-69.5ms  grade=ok  target_row=29
-14:37:49 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=6847.0 ms
-14:37:49 [RhythmGame.Player] DEBUG   AUTO-MISS  health=90
-14:37:49 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=7178.0 ms
-14:37:50 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=7345.0 ms
-14:37:50 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=7609.0 ms
-14:37:50 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-58.5ms  streak=1  mult=1  score=1500
-14:37:50 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=-58.5ms  grade=ok  target_row=41
-14:37:50 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=7798.0 ms
-14:37:51 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=8459.0 ms
-14:37:51 [RhythmGame.Player] DEBUG   AUTO-MISS  health=80
-14:37:51 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=8602.0 ms
-14:37:51 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=8715.0 ms
-14:37:51 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=8928.0 ms
-14:37:52 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=9258.0 ms
-14:37:52 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=91.5ms  streak=1  mult=1  score=1600
-14:37:52 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=91.5ms  grade=ok  target_row=49
-14:37:52 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=9447.0 ms
-14:37:52 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=9965.0 ms
-14:37:52 [RhythmGame.Player] DEBUG   HIT  grade=good  err=35.5ms  streak=2  mult=1  score=1800
-14:37:52 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=35.5ms  grade=good  target_row=53
-14:37:53 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=10189.0 ms
-14:37:53 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=10730.0 ms
-14:37:53 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=62.5ms  streak=3  mult=1  score=1900
-14:37:53 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=62.5ms  grade=ok  target_row=57
-14:37:53 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=10858.0 ms
-14:37:54 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=11462.0 ms
-14:37:54 [RhythmGame.Player] DEBUG   HIT  grade=good  err=43.5ms  streak=4  mult=1  score=2100
-14:37:54 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=43.5ms  grade=good  target_row=61
-14:37:54 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=11766.0 ms
-14:37:54 [RhythmGame.Player] DEBUG   HOLD-DROP  health=70
-14:37:55 [RhythmGame.Conductor] INFO    Playback stopped
-14:37:55 [RhythmGame.Scene] INFO    Exited scene 'gameplay'
-14:37:55 [RhythmGame.Scenes] INFO    Main Menu entered
-14:37:55 [RhythmGame.Scene] INFO    Entered scene 'menu'
-14:37:58 [RhythmGame.Main] INFO    Game shut down cleanly
+14:39:39 [RhythmGame.Scenes] INFO    Main Menu entered
+14:39:39 [RhythmGame.Scene] INFO    Entered scene 'menu'
+14:39:39 [RhythmGame.Main] INFO    Game initialised – starting main loop
+14:39:40 [RhythmGame.Scene] INFO    Exited scene 'menu'
+14:39:40 [RhythmGame.Chart] INFO    Loaded chart 'Demo Beat' – BPM=80.0  rows=197  active notes=42
+14:39:40 [RhythmGame.Conductor] INFO    Initialized: BPM=80.0  ms/beat=750.00  ms/row=187.50  offset=0.0
+14:39:40 [RhythmGame.Node] INFO    NodePool created  size=128
+14:39:40 [RhythmGame.Node] INFO    Assets initialised  note_w=76  note_h=20
+14:39:40 [RhythmGame.Conductor] INFO    Playback started: /Users/putter/Documents/Y3sem2/pro_method/Rhythm-Game-Project/charts/demo.wav
+14:39:40 [RhythmGame.Scenes] INFO    Gameplay started – chart 'Demo Beat' at 1.00x
+14:39:40 [RhythmGame.Scene] INFO    Entered scene 'gameplay'
+14:39:41 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=790.0 ms
+14:39:41 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-128.5ms  streak=1  mult=1  score=100
+14:39:41 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-128.5ms  grade=ok  target_row=5
+14:39:41 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=918.0 ms
+14:39:42 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=1641.0 ms
+14:39:42 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-17.5ms  streak=2  mult=1  score=400
+14:39:42 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-17.5ms  grade=perfect  target_row=9
+14:39:42 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=1757.0 ms
+14:39:42 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=2376.0 ms
+14:39:42 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-50.5ms  streak=3  mult=1  score=600
+14:39:42 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-50.5ms  grade=good  target_row=13
+14:39:42 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=2459.0 ms
+14:39:43 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=3165.0 ms
+14:39:43 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=0.5ms  streak=4  mult=1  score=900
+14:39:43 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=0.5ms  grade=perfect  target_row=17
+14:39:43 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=3279.0 ms
+14:39:44 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=3885.0 ms
+14:39:44 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-33.5ms  streak=5  mult=1  score=1200
+14:39:44 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=-33.5ms  grade=perfect  target_row=21
+14:39:44 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=3983.0 ms
+14:39:45 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=4642.0 ms
+14:39:45 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-24.5ms  streak=6  mult=1  score=1500
+14:39:45 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=-24.5ms  grade=perfect  target_row=25
+14:39:45 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=4761.0 ms
+14:39:45 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=5423.0 ms
+14:39:45 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=5480.0 ms
+14:39:46 [RhythmGame.Player] DEBUG   AUTO-MISS  health=90
+14:39:47 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=6960.0 ms
+14:39:47 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=30.5ms  streak=1  mult=1  score=1800
+14:39:47 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=30.5ms  grade=perfect  target_row=37
+14:39:47 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=7060.0 ms
+14:39:48 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=7686.0 ms
+14:39:48 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=19.5ms  streak=2  mult=1  score=2100
+14:39:48 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=19.5ms  grade=perfect  target_row=41
+14:39:48 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=7785.0 ms
+14:39:48 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=8367.0 ms
+14:39:48 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-49.5ms  streak=3  mult=1  score=2400
+14:39:48 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=-49.5ms  grade=perfect  target_row=45
+14:39:48 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=8521.0 ms
+14:39:49 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=9128.0 ms
+14:39:49 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-38.5ms  streak=4  mult=1  score=2700
+14:39:49 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=-38.5ms  grade=perfect  target_row=49
+14:39:49 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=9266.0 ms
+14:39:50 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=9869.0 ms
+14:39:50 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-50.5ms  streak=5  mult=1  score=2900
+14:39:50 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=-50.5ms  grade=good  target_row=53
+14:39:50 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=9959.0 ms
+14:39:51 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=10621.0 ms
+14:39:51 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-46.5ms  streak=6  mult=1  score=3200
+14:39:51 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=-46.5ms  grade=perfect  target_row=57
+14:39:51 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=10757.0 ms
+14:39:51 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=11444.0 ms
+14:39:51 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=26.5ms  streak=7  mult=1  score=3500
+14:39:51 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=26.5ms  grade=perfect  target_row=61
+14:39:52 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=11617.0 ms
+14:39:52 [RhythmGame.Player] DEBUG   HOLD-DROP  health=80
+14:39:53 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=12745.0 ms
+14:39:53 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=12846.0 ms
+14:39:53 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=13027.0 ms
+14:39:53 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=109.5ms  streak=1  mult=1  score=3600
+14:39:53 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=109.5ms  grade=ok  target_row=69
+14:39:53 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=13137.0 ms
+14:39:54 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=13654.0 ms
+14:39:54 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-14.5ms  streak=2  mult=1  score=3900
+14:39:54 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-14.5ms  grade=perfect  target_row=73
+14:39:54 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=13746.0 ms
+14:39:54 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=14367.0 ms
+14:39:54 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-50.5ms  streak=3  mult=1  score=4100
+14:39:54 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=-50.5ms  grade=good  target_row=77
+14:39:54 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=14484.0 ms
+14:39:55 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=15184.0 ms
+14:39:55 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=17.5ms  streak=4  mult=1  score=4400
+14:39:55 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=17.5ms  grade=perfect  target_row=81
+14:39:55 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=15265.0 ms
+14:39:56 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=15860.0 ms
+14:39:56 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-57.5ms  streak=5  mult=1  score=4600
+14:39:56 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=-57.5ms  grade=good  target_row=85
+14:39:56 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=15995.0 ms
+14:39:57 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=16620.0 ms
+14:39:57 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-45.5ms  streak=6  mult=1  score=4900
+14:39:57 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=-45.5ms  grade=perfect  target_row=89
+14:39:57 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=16777.0 ms
+14:39:57 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=17418.0 ms
+14:39:57 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=2.5ms  streak=7  mult=1  score=5200
+14:39:57 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=2.5ms  grade=perfect  target_row=93
+14:39:59 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=18762.0 ms
+14:39:59 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=19056.0 ms
+14:39:59 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=140.5ms  streak=8  mult=1  score=5300
+14:39:59 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=140.5ms  grade=ok  target_row=101
+14:39:59 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=19149.0 ms
+14:39:59 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=19348.0 ms
+14:39:59 [RhythmGame.Player] DEBUG   HIT  grade=good  err=56.5ms  streak=9  mult=1  score=5500
+14:39:59 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=56.5ms  grade=good  target_row=103
+14:39:59 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=19448.0 ms
+14:40:00 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=19739.0 ms
+14:40:00 [RhythmGame.Player] DEBUG   HIT  grade=good  err=72.5ms  streak=10  mult=2  score=5900
+14:40:00 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=72.5ms  grade=good  target_row=105
+14:40:00 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=20112.0 ms
+14:40:00 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=20422.0 ms
+14:40:00 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=3.5ms  streak=11  mult=2  score=6500
+14:40:00 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=3.5ms  grade=perfect  target_row=109
+14:40:01 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=20556.0 ms
+14:40:01 [RhythmGame.Player] DEBUG   HOLD-DROP  health=70
+14:40:01 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=20774.0 ms
+14:40:01 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=20982.0 ms
+14:40:02 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=21794.0 ms
+14:40:02 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-133.5ms  streak=1  mult=1  score=6600
+14:40:02 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=-133.5ms  grade=ok  target_row=117
+14:40:02 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=21931.0 ms
+14:40:03 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=22671.0 ms
+14:40:03 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=3.5ms  streak=2  mult=1  score=6900
+14:40:03 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=3.5ms  grade=perfect  target_row=121
+14:40:03 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=22791.0 ms
+14:40:03 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=23376.0 ms
+14:40:03 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-39.5ms  streak=3  mult=1  score=7200
+14:40:03 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=-39.5ms  grade=perfect  target_row=125
+14:40:04 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=24016.0 ms
+14:40:04 [RhythmGame.Player] DEBUG   HOLD-DROP  health=60
+14:40:05 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=24792.0 ms
+14:40:05 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-127.5ms  streak=1  mult=1  score=7300
+14:40:05 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-127.5ms  grade=ok  target_row=133
+14:40:05 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=24927.0 ms
+14:40:06 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=25635.0 ms
+14:40:06 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-32.5ms  streak=2  mult=1  score=7600
+14:40:06 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-32.5ms  grade=perfect  target_row=137
+14:40:06 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=25770.0 ms
+14:40:06 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=26334.0 ms
+14:40:06 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-82.5ms  streak=3  mult=1  score=7800
+14:40:06 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-82.5ms  grade=good  target_row=141
+14:40:06 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=26451.0 ms
+14:40:07 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=27074.0 ms
+14:40:07 [RhythmGame.Player] DEBUG   HIT  grade=good  err=-92.5ms  streak=4  mult=1  score=8000
+14:40:07 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-92.5ms  grade=good  target_row=145
+14:40:07 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=27210.0 ms
+14:40:08 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=27756.0 ms
+14:40:08 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=27910.0 ms
+14:40:08 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=28027.0 ms
+14:40:08 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=110.5ms  streak=5  mult=1  score=8100
+14:40:08 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=110.5ms  grade=ok  target_row=149
+14:40:08 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=28163.0 ms
+14:40:09 [RhythmGame.Input] DEBUG   PRESS  lane=5  song_pos=28634.0 ms
+14:40:09 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-33.5ms  streak=6  mult=1  score=8400
+14:40:09 [RhythmGame.Scenes] DEBUG   Input  lane=5  err=-33.5ms  grade=perfect  target_row=153
+14:40:09 [RhythmGame.Input] DEBUG   RELEASE  lane=5  song_pos=28762.0 ms
+14:40:09 [RhythmGame.Input] DEBUG   PRESS  lane=4  song_pos=29288.0 ms
+14:40:09 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-138.5ms  streak=7  mult=1  score=8500
+14:40:09 [RhythmGame.Scenes] DEBUG   Input  lane=4  err=-138.5ms  grade=ok  target_row=157
+14:40:11 [RhythmGame.Input] DEBUG   RELEASE  lane=4  song_pos=30815.0 ms
+14:40:11 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=30988.0 ms
+14:40:11 [RhythmGame.Player] DEBUG   HIT  grade=good  err=60.5ms  streak=8  mult=1  score=8700
+14:40:11 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=60.5ms  grade=good  target_row=165
+14:40:11 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=31115.0 ms
+14:40:12 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=31636.0 ms
+14:40:12 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-41.5ms  streak=9  mult=1  score=9000
+14:40:12 [RhythmGame.Scenes] DEBUG   Input  lane=3  err=-41.5ms  grade=perfect  target_row=169
+14:40:12 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=31735.0 ms
+14:40:12 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=32338.0 ms
+14:40:12 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=32439.0 ms
+14:40:13 [RhythmGame.Player] DEBUG   AUTO-MISS  health=50
+14:40:13 [RhythmGame.Input] DEBUG   PRESS  lane=3  song_pos=32686.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=32730.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   RELEASE  lane=3  song_pos=32730.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=32865.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=32886.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=33038.0 ms
+14:40:13 [RhythmGame.Input] DEBUG   PRESS  lane=2  song_pos=33291.0 ms
+14:40:13 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=125.5ms  streak=1  mult=1  score=9100
+14:40:13 [RhythmGame.Scenes] DEBUG   Input  lane=2  err=125.5ms  grade=ok  target_row=177
+14:40:13 [RhythmGame.Input] DEBUG   RELEASE  lane=2  song_pos=33409.0 ms
+14:40:14 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=33817.0 ms
+14:40:14 [RhythmGame.Player] DEBUG   HIT  grade=ok  err=-100.5ms  streak=2  mult=1  score=9200
+14:40:14 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=-100.5ms  grade=ok  target_row=181
+14:40:14 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=33953.0 ms
+14:40:15 [RhythmGame.Input] DEBUG   PRESS  lane=1  song_pos=34654.0 ms
+14:40:15 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-25.5ms  streak=3  mult=1  score=9500
+14:40:15 [RhythmGame.Scenes] DEBUG   Input  lane=1  err=-25.5ms  grade=perfect  target_row=185
+14:40:15 [RhythmGame.Input] DEBUG   RELEASE  lane=1  song_pos=34791.0 ms
+14:40:15 [RhythmGame.Input] DEBUG   PRESS  lane=0  song_pos=35397.0 ms
+14:40:15 [RhythmGame.Player] DEBUG   HIT  grade=perfect  err=-21.5ms  streak=4  mult=1  score=9800
+14:40:15 [RhythmGame.Scenes] DEBUG   Input  lane=0  err=-21.5ms  grade=perfect  target_row=189
+14:40:16 [RhythmGame.Input] DEBUG   RELEASE  lane=0  song_pos=36121.0 ms
+14:40:16 [RhythmGame.Player] DEBUG   HOLD-DROP  health=40
+14:40:16 [RhythmGame.Scenes] INFO    Chart finished
+14:40:16 [RhythmGame.Conductor] INFO    Playback stopped
+14:40:16 [RhythmGame.Scene] INFO    Exited scene 'gameplay'
+14:40:16 [RhythmGame.Scenes] INFO    Results – score=9800  P=22 G=9 OK=9 M=6
+14:40:16 [RhythmGame.Scene] INFO    Entered scene 'results'
